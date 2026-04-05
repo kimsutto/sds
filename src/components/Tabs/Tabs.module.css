@@ -1,0 +1,86 @@
+.tabs {
+  display: inline-flex;
+  font-family: var(--font-family);
+}
+
+.tab {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-family);
+  transition: all var(--transition-fast);
+}
+
+/* Underline */
+.underline {
+  gap: 0;
+}
+
+.underline .tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  font-size: var(--font-size-body);
+  color: var(--color-secondary);
+  font-weight: var(--font-weight-regular);
+}
+
+.underline .tab.active {
+  color: var(--text-main);
+  font-weight: var(--font-weight-medium);
+}
+
+.underline .indicator {
+  width: 100%;
+  height: 1px;
+  background: var(--bg-sub);
+}
+
+.underline .tab.active .indicator {
+  height: 2px;
+  background: var(--color-secondary);
+}
+
+/* Pill */
+.pill {
+  gap: 4px;
+  padding: 4px;
+  border-radius: 10px;
+  background: var(--bg-sub);
+}
+
+.pill .tab {
+  padding: 8px 16px;
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-body-sm);
+  color: var(--color-secondary);
+  font-weight: var(--font-weight-regular);
+}
+
+.pill .tab.active {
+  background: var(--bg-card);
+  color: var(--text-main);
+  font-weight: var(--font-weight-medium);
+}
+
+/* Boxed */
+.boxed {
+  gap: 0;
+}
+
+.boxed .tab {
+  padding: 10px 20px;
+  font-size: var(--font-size-body-sm);
+  color: var(--color-secondary);
+  font-weight: var(--font-weight-regular);
+  border: 1px solid var(--border-default);
+  background: var(--bg-main);
+}
+
+.boxed .tab.active {
+  background: var(--bg-card);
+  color: var(--text-main);
+  font-weight: var(--font-weight-medium);
+}

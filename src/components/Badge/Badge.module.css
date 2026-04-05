@@ -1,0 +1,51 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  font-family: var(--font-family);
+  font-size: var(--font-size-caption);
+  font-weight: var(--font-weight-medium);
+  line-height: 16px;
+  white-space: nowrap;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+/* Solid */
+.solid.default { background: var(--color-primary); color: #fff; }
+.solid.primary { background: var(--color-secondary); color: #fff; }
+.solid.accent { background: var(--color-accent); color: #fff; }
+.solid.success { background: var(--state-success); color: #fff; }
+.solid.warning { background: var(--state-warning); color: #fff; }
+.solid.error { background: var(--state-error); color: #fff; }
+.solid.info { background: var(--state-info); color: #fff; }
+
+/* Subtle */
+.subtle.default { background: rgba(168,171,184,0.15); color: var(--color-secondary); }
+.subtle.primary { background: rgba(111,114,133,0.15); color: var(--text-sub); }
+.subtle.accent { background: rgba(167,157,191,0.15); color: #7B6F96; }
+.subtle.success { background: rgba(91,154,107,0.15); color: #3D7A4D; }
+.subtle.warning { background: rgba(196,151,90,0.15); color: #9A7040; }
+.subtle.error { background: rgba(196,90,90,0.15); color: #A34848; }
+.subtle.info { background: rgba(90,142,196,0.15); color: #3D6D9A; }
+
+/* Outline */
+.outline { background: transparent; border: 1.5px solid; }
+.outline.default { border-color: var(--color-primary); color: var(--color-secondary); }
+.outline.success { border-color: var(--state-success); color: var(--state-success); }
+.outline.warning { border-color: var(--state-warning); color: var(--state-warning); }
+.outline.error { border-color: var(--state-error); color: var(--state-error); }
+.outline.info { border-color: var(--state-info); color: var(--state-info); }
+
+/* Dots */
+.dot_default { background: var(--color-primary); }
+.dot_success { background: var(--state-success); }
+.dot_warning { background: var(--state-warning); }
+.dot_error { background: var(--state-error); }
+.dot_info { background: var(--state-info); }
